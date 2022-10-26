@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.align-center{
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+    flex: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+#header{
+    background-color: green;
+    margin: 30px auto;
+    border-radius: 9mm;
+    /* 1mm = 8px */
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+#header .logo{
+    width: 20%;
+}
+#header .logo img{
+    width: 100%;
+}
+#header .menu{
+    width: 60%;
+}
+#header .menu ul{
+    justify-content: center;
+}
+#header .menu ul li a{
+    padding: 13px;
+    display: block;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    transition: 0.5s;
+}
+#header .tel-box{
+    width: 20%;
+}
+#header .tel-box a{
+    color: black;
+    text-decoration: none;
+}
+#header .tel-box a i{
+    color: #ACD25F;
+    margin-right: 10px;
+
+}
+#header .menu ul li a i{
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+}
+#header .menu ul li a:hover i{
+    transform: rotate(180deg);
+}
+/* HEADER END */
+/* ---------------------------- */
+
+#section-1{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../photo/swiper-slide-3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#section-1 .box-text{
+    color: white;
+}
+#section-1 h4{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1;
+    font-family: serif;
+}
+#section-1 h1{
+    font-size: 140px;
+    text-transform: capitalize;
+}
+#section-1 h5{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#section-1 a{
+    text-transform: uppercase;
+    background-color: #ACD25F;
+    border-radius: 100px;
+    text-decoration: none;
+    margin-top: 55px;
+    padding: 20px;
+    line-height: 8rem;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+#section-1 a:hover{
+    color: black;
+    background-color: white;
+}
+/* SECTION END */
+/* --------------------------- */
+
+#offer{
+    width: 50px;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+#offer h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 47px;
+    padding: 5rem ;
+    color: #292929;
+    letter-spacing: 0.01em;
+    text-align: center !important;
+}
+#offer .box-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+#offer .box{
+    width: 30%;
+    height: 50%;
+    margin: 12px;
+    transition: 0.5s e;
+}
+#offer .box img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 100rem;
+    width: 100%;
+}
+#offer .box:hover{
+    box-shadow: 0 0 20px 0 grey;
+}
+#offer .box .img-text{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+#offer .box h4{
+    font-size: 26px;
+    line-height: 1;
+    font-family: serif;
+    color: #292929;
+    letter-spacing: 0.01em;
+}
+#offer .box a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    line-height: 29px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.3s ease-in-out;
+    color: #acd25f;
+}
+#offer .box a:hover{
+    color: #292929;
+}
+
+/* OFFER END */
+/* -------------------------------- */
+
+#testimonials{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../photo/testimonials.jpg);
+    text-align: center !important;
+}
+/* #testimonials .box{
+    display: flex;
+    flex-wrap: wrap;
+} */
+#testimonials h2{
+    color: #ffffff;
+    font-size: 47px;
+    line-height: 1.14894;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-family: serif;
+    margin-top: 7rem;
+}
+#testimonials p{
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+#testimonials h3{
+    margin-top: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #acd25f;
+    font-size: 26px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+}
+
+#testimonials .box-img img{
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    padding: 5px;
+    border-radius: 50%;
+    /* height: auto; */
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*  testimonials END*/
+/* ---------------------------------------- */
+
+#plans{
+    height: 70vh;
+    background-color: #F5F5F5;
+}
+
+#plans .box{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#plans h2{
+    align-items: center !important;
+    margin-top: 50px;
+    padding-left: 25rem;
+    padding-bottom: 5rem;
+    color: #292929;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-size: 47px;
+    line-height: 1.14894;
+    font-family: serif;
+}
+#plans .box-item{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 90%;
+    height: auto; */
+}
+#plans .boxes{
+    width: 33%;
+    height: auto;
+    /* margin: 0 15px; */
+    justify-content: space-around;
+}
+#plans .box-item h4{
+    font-weight: 400;
+    color: #acd25f;
+    font-size: 26px;
+    line-height: 1;
+    font-family: "Roboto Slab", serif;
+}
+/* #plans .box-item p{
+    text-align: center;
+} */
+#plans .box-item i{
+    flex-direction: column;
+    color: #acd25f;
+}
+#plans .box-item p{
+    color: #907C7C;
+    margin-bottom: 20px;
+}
+#plans .box-item a{
+    text-decoration: none;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 40px;
+    /* margin-top: 50rem; */
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid ;
+    border-radius: 100%;
+    border-color: #292929;
+    color: #292929;
+    transition: 250ms ease-in-out;
+}
+/* plans end */
+/* /------------------------------------ */
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+#gallery .boxes h2{
+    align-items: center !important;
+    padding-left: 38rem;
+    margin: 50px 0;
+    font-size: 47px;
+    color: #292929;
+    font-family: "Roboto Slab", serif;
+
+}
+#gallery .box-item{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+/* #gallery .box-item .box{
+
+} */
+#gallery .box-item .box img{
+    width: 25%;
+    margin: 20px;
+    /* justify-content: space-between; */
+}
